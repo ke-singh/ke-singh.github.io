@@ -5,8 +5,12 @@
 var myElement = $(".top");
 $(window).on("scroll", function() {
   var st = $(this).scrollTop();
+  var transformValue = st / 40;
+  var blurValue = Math.min(st / 100, 3);
   myElement.css({
-    opacity: 0.2 + st / 400
+    transform: "translate3d(0, -" + transformValue + "%, 0)",
+    opacity: 0.2 + st / 400,
+    "-webkit-filter": "blur(" + blurValue + "px)"
   });
 });
 
