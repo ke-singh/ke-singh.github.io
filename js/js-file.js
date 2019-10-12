@@ -5,12 +5,9 @@
 var myElement = $(".top");
 $(window).on("scroll", function() {
   var st = $(this).scrollTop();
-  var transformValue = st / 40;
-  var blurValue = Math.min(st / 100, 3);
+  var blurValue = 30 - st / 5;
   myElement.css({
-    transform: "translate3d(0, -" + transformValue + "%, 0)",
-    opacity: 0.2 + st / 400,
-    "-webkit-filter": "blur(" + blurValue + "px)"
+    filter: "blur(" + blurValue + "px)"
   });
 });
 
@@ -38,3 +35,33 @@ $(document).ready(function() {
       );
   });
 });
+
+function languageAnimationHandler() {
+  var y = $(this).scrollTop();
+  var x = $("#third").position().top;
+
+  if (y > x - 850) {
+    $("#blue").addClass("blue");
+    $("#yellow").addClass("yellow");
+    $("#pink").addClass("pink");
+    $("#green").addClass("green");
+  }
+  if (y < x - 850 || y > x + 569) {
+    $("#blue").removeClass("blue");
+    $("#yellow").removeClass("yellow");
+    $("#pink").removeClass("pink");
+    $("#green").removeClass("green");
+  }
+}
+$(document).ready(function() {
+  languageAnimationHandler();
+});
+
+$(document).scroll(function() {
+  languageAnimationHandler();
+});
+
+function playAudio(url) {
+  var a = new Audio(url);
+  a.play();
+}

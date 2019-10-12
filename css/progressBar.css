@@ -56,7 +56,6 @@
   border-right: 0;
   -webkit-transform-origin: center right;
   transform-origin: center right;
-  animation: loading-1 1.8s linear forwards;
 }
 .progress .inner-circle,
 .progress .progress-value {
@@ -101,6 +100,9 @@
 .progress.blue .inner-circle {
   animation: loading-6 3.8s ease forwards;
 }
+.progress.blue .progress-right .progress-bar {
+  animation: loading-1 1.8s linear forwards;
+}
 
 .progress.yellow .progress-bar {
   border-color: #fdba04;
@@ -127,6 +129,9 @@
 .progress.pink .inner-circle {
   animation: loading-Hindi 3.8s ease forwards;
 }
+.progress.pink .progress-right .progress-bar {
+  animation: loading-1 1.8s linear forwards;
+}
 .progress.green .progress-bar {
   border-color: #1abc9c;
 }
@@ -138,6 +143,9 @@
 }
 .progress.green .inner-circle {
   animation: loading-Punjabi 3.8s ease forwards;
+}
+.progress.green .progress-right .progress-bar {
+  animation: loading-1 1.8s linear forwards;
 }
 @keyframes loading-1 {
   0% {
