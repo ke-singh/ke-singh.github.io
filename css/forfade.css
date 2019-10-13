@@ -9,6 +9,11 @@ body {
   filter: blur(30px);
   /* opacity: 0.2; */
 }
+@media only screen and (max-width: 600px) {
+  .selfImage {
+    height: 250px;
+  }
+}
 #myName {
   color: rgb(98, 103, 110);
 }
