@@ -36,6 +36,13 @@ $(document).ready(function() {
   });
 });
 
+function skillsAnimationHandler() {
+  var y = $(this).scrollTop();
+  var x = $("#skills").position().top;
+  if (y > x - 900) {
+    $("#skills").addClass("animationList");
+  }
+}
 function languageAnimationHandler() {
   var y = $(this).scrollTop();
   var x = $("#third").position().top;
@@ -55,10 +62,12 @@ function languageAnimationHandler() {
 }
 $(document).ready(function() {
   languageAnimationHandler();
+  skillsAnimationHandler();
 });
 
 $(document).scroll(function() {
   languageAnimationHandler();
+  skillsAnimationHandler();
 });
 
 function playAudio(url) {
