@@ -45,7 +45,7 @@ body {
   }
 }
 #myName {
-  color: rgb(98, 103, 110);
+  color: black;
 }
 #myName:hover {
   color: white;
@@ -284,7 +284,7 @@ h1.display-2 {
   text-align: left;
 }
 .tilesWrap li h2 {
-  font-size: 114px;
+  font-size: 50px;
   margin: 0;
   position: absolute;
   opacity: 0.2;
