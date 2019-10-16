@@ -33,14 +33,20 @@
     This portion of code is for the faded area on the top
   -->
 
-
-
-
   <div class="card img-fluid" style="width:100%;">
     <img class="card-img-top top" src="images/background.HE.jpg" alt="Card image" style="width:100%">
     <div class="card-img-overlay">
+      <div class="text-center d-flex" id="navigation" style="color: black;">
+      <div class="mx-auto">
+        <h4><small class="font-weight-bold"><a href="#intro">Intro</a></h4> </small>
+        <h4><small class="font-weight-bold"><a href="#work">Work</a></h4> </small>
+        <h4><small class="font-weight-bold"><a href="#projects" >Projects</a></h4> </small>
+        <h4><small class="font-weight-bold"><a href="#skills">Skills</a></h4> </small>
+        <h4><small class="font-weight-bold"><a href="#cv">CV</a></h4> </small>
+        <h4><small class="font-weight-bold"><a href="#demo">Facts about me</a></h4> </small>
+      </div>
+      </div>
       <div class="mx-auto text-center formargin">
-
         <img src="images/self1.jpg" height="350px" class="rounded-circle selfImage" style="border:4px solid white;">
         <h4 class="mt-3 text2">Yo! I'm <span onclick="playAudio('audio/name.mp3')" id="myName"> <i
               class="fa fa-volume-up" class="text2" style="cursor: pointer;"> Keshav</i> </span>. I code, game, and
@@ -86,7 +92,7 @@
   -->
 
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="intro">
     <div class="d-flex flex-column my-5">
       <i class="fa fa-5x fa-user mx-auto mb-5 personicon" aria-hidden="true"></i>
       <h3 style="text-align: center;" class="mb-5"> <small>Currently, I am doing Bachelors in Computer Science with
@@ -109,7 +115,7 @@
 
 
 
-  <div class="card img-fluid" style="width:100%">
+  <div class="card img-fluid" style="width:100%" id="work">
     <div class="card-img-top containerJob" style="background-image: url('images/work.png')"></div>
     <div class="card-img-overlay d-flex">
       <div class="my-auto mx-auto d-flex flex-column">
@@ -188,13 +194,10 @@
 
 
 
-  <!--
-    This portion of code is for interns = 6th
-  -->
+  
 
-
-  <div class="card img-fluid" style="width:100%">
-      <div class="card-img-top containerJob" style="background-image: url('images/work.png')"></div>
+  <div class="card img-fluid" style="width:100%" id="projects">
+      <div class="card-img-top containerJob" style="background-image: url('images/project.webp')"></div>
       <div class="card-img-overlay d-flex">
         <div class="my-auto mx-auto d-flex flex-column">
           <i class="fa fa-5x fa-tasks mx-auto mb-4" aria-hidden="true"></i>
@@ -267,38 +270,7 @@
         industry. Lorem Ipsum has been the industry's standard dummy text ever 
         since the 1500s.
       </p>
-      <button>Read more</button>
-    </li>
-      <li>
-      <h2>01</h2>
-      <h3>Title 1</h3>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting   
-        industry. Lorem Ipsum has been the industry's standard dummy text ever 
-        since the 1500s.
-      </p>
-      <button>Read more</button>
-    </li>
-      <li>
-      <h2>01</h2>
-      <h3>Title 1</h3>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting   
-        industry. Lorem Ipsum has been the industry's standard dummy text ever 
-        since the 1500s.
-      </p>
-      <button>Read more</button>
-    </li>
-    <li>
-      <h2>01</h2>
-      <h3>Title 1</h3>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting   
-        industry. Lorem Ipsum has been the industry's standard dummy text ever 
-        since the 1500s.
-      </p>
-      <button>Read more</button>
-    </li>
+      <button onclick="window.open('ke-singh.github.io')">Read more</button>
     <li>
       <h2>02</h2>
       <h3>Title 2</h3>
@@ -327,16 +299,6 @@
       </p>
       <button>Read more</button>
     </li>
-    <li>
-        <h2>04</h2>
-        <h3>Title 4</h3>
-        <p>
-          With the release of Letraset sheets containing Lorem Ipsum passages,  
-          and more recently with desktop publishing software like Aldus PageMaker 
-          including versions of Lorem Ipsum.
-        </p>
-        <button>Read more</button>
-      </li>
   </ul>
 </div>
 
@@ -347,7 +309,7 @@
   -->
 
 
-  <div class="card img-fluid" style="width:100%">
+  <div class="card img-fluid" style="width:100%" id="skills">
       <div class="card-img-top containerSkills" style="background-image: url('images/skills.png')"></div>
       <div class="card-img-overlay d-flex">
         <div class="my-auto mx-auto">
@@ -363,7 +325,7 @@
     <!--Writing down the skills = 4th
     -->
   
-    <div class="container-fluid skillsList" style="height: 100%; background-color: #383838;color: white;" id="skills">
+    <div class="container-fluid skillsList" style="height: 100%; background-color: #383838;color: white;">
       <div class="container">
         <div class="row pt-5 pb-5">
   
@@ -537,7 +499,20 @@
   </div>
 
 
+  <!-- CV -->
 
+  <div class="card img-fluid" style="width:100%" id="cv">
+      <div class="card-img-top containerCV" style="background-image: url('images/project.webp'); filter: blur(10px);;"></div>
+      <div class="card-img-overlay d-flex">
+        <div class="my-auto mx-auto d-flex flex-column">
+          <h1 class="display-2 font-weight-bold text1 ">Interested to look at my CV? Click below.</h1>
+          <br>
+          <a href="https://ke-singh.github.io/" target="_blank" class="btn btn-lg mx-auto CVbutton">
+            <i class="fa fa-eye fa-2x mx-auto CVeye"></i>
+          </a>
+        </div>
+      </div>
+  </div>
   <!--
    This portion of code is for some facts = 6th
    -->
@@ -609,31 +584,12 @@
     This portion of code is for ending = 
   -->
 
-  <div class="container-fluid" style="background-color:#383838">
+  <div class="container-fluid">
+    
+      <h4 class="py-5 text-center"><small class="font-weight-bold">Copyright © Keshav Kumar Singh 2019</small></h4>
 
-    <div class="text pt-3 pb-3">
-      <address>
-        <strong>Keshav Kumar Singh</strong><br>
-        College Ring 3, Jacobs University Bremen<br>
-        28759 Bremen, Germany<br>
-        <abbr title="Phone">P:</abbr> +49-15153158391<br>
-        <a href="mailto: ke.singh@jacobs-university.de">ke.singh@jacobs-university.de</a>
-      </address>
-      <div class="container text-center mx-auto">
-        Copyright © Keshav Kumar Singh 2019
-      </div>
-
-
-
-
-
-
-
-
-
-    </div>
   </div>
-  </div>
+
 
 
 

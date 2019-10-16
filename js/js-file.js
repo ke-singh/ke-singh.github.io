@@ -38,26 +38,20 @@ $(document).ready(function() {
 
 function skillsAnimationHandler() {
   var y = $(this).scrollTop();
-  var x = $("#skills").position().top;
-  if (y > x - 900) {
-    $("#skills").addClass("animationList");
+  var x = $(".skillsList").position().top;
+  if (y > x - 900 && y < x + 900) {
+    $(".skillsList").addClass("animationList");
   }
 }
 function languageAnimationHandler() {
   var y = $(this).scrollTop();
   var x = $("#third").position().top;
 
-  if (y > x - 850) {
+  if (y > x - 850 && y < x + 850) {
     $("#blue").addClass("blue");
     $("#yellow").addClass("yellow");
     $("#pink").addClass("pink");
     $("#green").addClass("green");
-  }
-  if (y < x - 850 || y > x + 569) {
-    $("#blue").removeClass("blue");
-    $("#yellow").removeClass("yellow");
-    $("#pink").removeClass("pink");
-    $("#green").removeClass("green");
   }
 }
 $(document).ready(function() {
